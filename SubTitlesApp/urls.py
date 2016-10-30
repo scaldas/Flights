@@ -11,4 +11,5 @@ urlpatterns = [
     url(r'^', include(router.urls)),
     url(r'^flights/$', views.FlightList.as_view()),
     url(r'^flights/(?P<pk>[0-9]+)$', views.FlightDetail.as_view()),
+    url(r'^flights-dynamic/$', views.FligthsDynamic.as_view()),
 ]
